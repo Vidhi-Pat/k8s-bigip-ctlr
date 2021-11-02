@@ -171,10 +171,10 @@ metadata:
 spec:
   group: cis.f5.com
   names:
-    kind: VirtualServerWithTLSProfile
+    kind: TLSProfile
     plural: tlsprofiles
     shortNames:
-      - VirtualServerWithTLSProfile
+      - tls
     singular: tlsprofile
   scope: Namespaced
   versions:

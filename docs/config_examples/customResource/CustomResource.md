@@ -379,7 +379,7 @@ kubectl create -f clusterrole.yml [-n kube-system]
   
     https://raw.githubusercontent.com/F5Networks/k8s-bigip-ctlr/master/docs/config_examples/crd/Install/sample-nodeport-k8s-bigip-ctlr-crd-secret.yml
  ```sh
-kubectl create -f sample-nodeport-k8s-bigip-ctlr-customResource-secret.yml [-n kube-system]
+kubectl create -f sample-nodeport-k8s-bigip-ctlr-crd-secret.yml [-n kube-system]
 ``` 
 
 ## Cluster Mode
@@ -390,7 +390,7 @@ kubectl create -f sample-nodeport-k8s-bigip-ctlr-customResource-secret.yml [-n k
  
       https://raw.githubusercontent.com/F5Networks/k8s-bigip-ctlr/master/docs/config_examples/crd/Install/sample-cluster-k8s-bigip-ctlr-crd-secret.yml
  ```sh
-kubectl create -f sample-cluster-k8s-bigip-ctlr-customResource-secret.yml [-n kube-system]
+kubectl create -f sample-cluster-k8s-bigip-ctlr-crd-secret.yml [-n kube-system]
 ```
 ## Share Nodes
 
