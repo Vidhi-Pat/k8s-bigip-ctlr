@@ -805,6 +805,12 @@ func (ctlr *Controller) processVirtualServers(
 				log.Errorf("Error in virtualserver address: %s", err.Error())
 				return err
 			}
+			if ip == ""{
+				ip = virtual.Spec.VirtualServerAddress
+				if ip == ""{
+					return fmt.Errorf("No VirtualServer address found for: %s", virtual.Name)
+				}
+			}
 		}
 	}
 	// Depending on the ports defined, TLS type or Unsecured we will populate the resource config.
